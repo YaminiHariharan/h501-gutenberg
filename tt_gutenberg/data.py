@@ -19,7 +19,7 @@ def load_gutenberg() -> pd.DataFrame:
     -------
     pandas.DataFrame
         A merged DataFrame containing author and book metadata
-        joined on ``author_id``.
+        joined on ``gutenberg_author_id``.
     """
     gutenberg_authors = pd.read_csv(AUTHORS_URL)
     gutenberg_metadata = pd.read_csv(METADATA_URL)
